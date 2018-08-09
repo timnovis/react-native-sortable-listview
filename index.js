@@ -507,12 +507,12 @@ class SortableListView extends React.Component {
 
   scrollTo = (...args) => {
     if (!this.refs.list) return
-    this.refs.list.scrollTo(...args)
+    this.refs.list.list.scrollTo(...args)
   }
 
   getScrollResponder = () => {
     if (!this.refs.list) return
-    this.refs.list.getScrollResponder()
+    this.refs.list.list.getScrollResponder()
   }
 }
 
